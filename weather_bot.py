@@ -68,7 +68,7 @@ async def language_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # 🌤️ Получение погоды
 def get_weather(city, lang):
-    url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={"7295c0329e9785c5635782bfaaf13991"}&units=metric&lang={lang}"
+    url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid=("7295c0329e9785c5635782bfaaf13991")&units=metric&lang={lang}"
     response = requests.get(url)
     data = response.json()
 
